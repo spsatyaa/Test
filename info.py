@@ -19,8 +19,8 @@ def is_enabled(value, default):
 
 # Bot information *
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
+API_ID = int(environ['4824433'])
+API_HASH = environ['847a4e80129a84dee359e094e17301ce']
 BOT_TOKEN = environ['BOT_TOKEN']
 
 # Bot settings
@@ -40,7 +40,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information *
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Filmydoses:dXjUYaFC2BEseAxo@cluster0.n3cnk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "LazyDeveloper")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
